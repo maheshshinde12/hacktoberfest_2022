@@ -12,9 +12,15 @@ int main()
     cout << "Front of q is:" << q.front() << endl;
     q.push(19);
     cout << "Front of q is:" << q.front() << endl;
-    cout << "Back of q is:" << q.back() << endl;
+    cout << "Back SIde of q is:" << q.back() << endl;
     cout << "Size of queue is:" << q.size() << endl;
 
+    q.push(15);
+    cout << "Front of q is:" << q.front() << endl;
+    q.push(19);
+    cout << "Front of q is:" << q.front() << endl;
+    cout << "Back of q is:" << q.back() << endl;
+    cout << "Size of queue is:" << q.size() << endl;
     q.pop();
     q.pop();
     q.pop();
