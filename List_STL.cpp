@@ -10,11 +10,12 @@ int main(){
         cout<<i<<" ";
     } cout<<endl;
     l.push_back(1);
-    l.push_front(2);
+    
 
     for(int i:l) {
         cout<<i<<" ";
     }
+    cout<<"After Erase:"<<endl;
     cout<<endl;
     l.erase(l.begin());
     cout<<"After Erase:"<<endl;
