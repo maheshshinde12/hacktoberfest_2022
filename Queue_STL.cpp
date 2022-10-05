@@ -12,7 +12,12 @@ int main() {
 
     cout<<"First Element:"<<q.front()<<endl;
     q.pop();
-    cout<<"First Element:"<<q.front()<<endl;
+
+    cout<<"Size Before Pop:"<<q.size()<<endl;
+
+    cout<<"Second Element:"<<q.front()<<endl;
+    q.pop();
+    cout<<"Third Element:"<<q.front()<<endl;
     cout<<"Size Before Pop:"<<q.size()<<endl;
 
 
