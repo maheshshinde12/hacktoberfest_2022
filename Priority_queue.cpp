@@ -10,10 +10,6 @@ int main() {
 
     maxi.push(1);
     maxi.push(3);
-    maxi.push(4);
-    maxi.push(6);
-    maxi.push(8);
-    maxi.push(9);
     mini.pop();
     mini.pop();
 
@@ -29,6 +25,7 @@ int main() {
     mini.push(1);
     mini.pop();
     mini.pop();
+    mini.pop();
 
     int m = mini.size();
     for(int i=0;i<m;i++) {
@@ -36,5 +33,5 @@ int main() {
         mini.top();
     }cout<<endl;
 
-    cout<<"Empty:"<<mini.empty()<<endl;
+    cout<<"Khali hai kya bhai:"<<mini.empty()<<endl;
 }
