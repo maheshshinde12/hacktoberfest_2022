@@ -36,9 +36,11 @@ float evaluatePostfixExp(char exp[])
             case '/':
                 value = op1 / op2;
                 break;
-            
             case '*':
-                value =  op1 * op2;
+                value = op1 * op2;
+                break;
+            case '%':
+                value = (int)op1 % (int)op2;
                 break;
             }
             push(st, value);
@@ -50,7 +52,7 @@ float evaluatePostfixExp(char exp[])
 void push(float st[], float val)
 {
     if (top == MAX - 1)
-        printf("\n STACK OVERFLOW");
+        printf("\n STACK UNDERFLOW");
     else
     {
         top++;
@@ -61,7 +63,7 @@ float pop(float st[])
 {
     float val = -1;
     if (top == -1)
-        printf("\n STACK UNDERFLOW");
+        printf("\n STACK OVERFLOW");
     else
     {
         val = st[top];
