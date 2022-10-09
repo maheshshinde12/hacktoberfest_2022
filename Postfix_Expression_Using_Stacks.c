@@ -8,9 +8,9 @@ float pop(float st[]);
 float evaluatePostfixExp(char exp[]);
 int main()
 {
-    float val;
+    float val;//Declaring float
     char exp[100];
-    printf("\n Enter any postfix expression : ");
+    printf("\n Enter any postfix expression : ");//Entering postfix expression
     gets(exp);
     val = evaluatePostfixExp(exp);
     printf("\n Value of the postfix expression = %.2f", val);
@@ -18,6 +18,13 @@ int main()
 }
 float evaluatePostfixExp(char exp[])
 {
+    float val;
+    char exp[100];
+    printf("\n Enter any postfix expression : ");
+    gets(exp);
+    val = evaluatePostfixExp(exp);
+    printf("\n Value of the postfix expression = %.2f", val);
+    return 0;
     int i = 0;
     float op1, op2, value;
     while (exp[i] != '\0')
